@@ -1,12 +1,23 @@
 #React-Native Firebase - Basic authentication app
 
+##Description  
+This is a React-Native application that allows an user to register to Firebase, Login and change user data.  
+
+##Philosophy  
+The React-Native world is changin really fast. I want to keep as few dependencies as possible to be able to 
+update them frequently.  
+
+##Instructions  
+
+Set your Firebase URL in ```FirebaseConnect.js```.  
+
 ```
 git clone repo_url  
 npm install  
 react-native run-ios
 react-native run-android
-```  
-Set your Firebase URL in ```FirebaseConnect.js```.  
+```
+
 This is a sample application that works both on Android and IOS with the 
 same codebase.  
 It just allows you to register, login and change your profile data.  
