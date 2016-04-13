@@ -12,7 +12,7 @@ update them frequently.
 Set your Firebase URL in ```FirebaseConnect.js```.  
 
 ```
-git clone repo_url  
+git clone https://github.com/giacomorebonato/rn-firebase-basic-authentication.git   
 npm install  
 react-native run-ios
 react-native run-android
@@ -30,7 +30,7 @@ and it is based on the [new Navgation experimental API](https://github.com/faceb
 ##Connectors  
 In the connectors folders I have created 2 higher order components  
 1. FirebaseConnect.js listen to specified collection changes and authenticates 
-the user with the stored token
+the user with the stored token  
 2. RealmConnect.js is used only for storing the user token on login  
 
 ##Contribute  
