@@ -32,7 +32,8 @@ export default class Login extends Component {
           this.setState({ error: err.message })
         } else {
           this.setState({ success: true })
-          Actions['home']()
+          Actions.pop()
+          //Actions['home']()
         }
       })
     }

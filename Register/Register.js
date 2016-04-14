@@ -35,7 +35,7 @@ export default class Register extends Component {
               username: vm.username,
               email: vm.email
             })
-          Actions['home']()
+          Actions.pop()
         }
       })
     }
