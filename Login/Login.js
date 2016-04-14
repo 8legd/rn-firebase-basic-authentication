@@ -8,6 +8,7 @@ import Error from '../components/Error'
 import SubmitButton from '../components/SubmitButton'
 import Success from '../components/Success'
 import t from 'tcomb-form-native'
+import { Actions } from 'react-native-router-flux'
 
 let Form = t.form.Form
 
@@ -31,7 +32,7 @@ export default class Login extends Component {
           this.setState({ error: err.message })
         } else {
           this.setState({ success: true })
-          let auth = props.rootRef.getAuth()
+          Actions['home']()
         }
       })
     }

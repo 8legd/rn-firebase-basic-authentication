@@ -7,6 +7,7 @@ import Error from '../components/Error'
 import Success from '../components/Success'
 import SubmitButton from '../components/SubmitButton'
 import t from 'tcomb-form-native'
+import { Actions } from 'react-native-router-flux'
 
 let Form = t.form.Form
 
@@ -34,6 +35,7 @@ export default class Register extends Component {
               username: vm.username,
               email: vm.email
             })
+          Actions['home']()
         }
       })
     }
