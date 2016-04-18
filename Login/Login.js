@@ -33,7 +33,6 @@ export default class Login extends Component {
         } else {
           this.setState({ success: true })
           Actions.pop()
-          //Actions['home']()
         }
       })
     }
