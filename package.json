@@ -3,18 +3,35 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
     "firebase": "^2.4.2",
     "i": "^0.3.4",
     "react": "^0.14.8",
     "react-native": "^0.23.1",
-    "react-native-router-flux": "^3.2.13",
+    "react-native-router-flux": "^3.22.0",
     "realm": "^0.11.1",
     "tcomb-form-native": "^0.4.2"
   },
   "devDependencies": {
+    "jest": "^0.1.40",
     "standard": "^6.0.8"
+  },
+  "jest": {
+    "scriptPreprocessor": "node_modules/react-native/jestSupport/preprocessor.js",
+    "setupEnvScriptFile": "node_modules/react-native/jestSupport/env.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "packager/react-packager/src/Activity/"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "promise",
+      "source-map"
+    ]
   }
 }
