@@ -78,10 +78,6 @@ Login.propTypes = {
   rootRef: PropTypes.object.isRequired
 }
 
-const styles = StyleSheet.create({
-
-})
-
 var LoginVM = t.struct({
   email: t.String,
   password: t.String
