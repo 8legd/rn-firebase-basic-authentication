@@ -8,14 +8,13 @@ The React-Native world is changin really fast. I want to keep as few dependencie
 update them frequently.  
 
 ## Instructions  
-Set your Firebase URL in ```FirebaseConnect.js```.  
-
 ```
 git clone https://github.com/giacomorebonato/rn-firebase-basic-authentication.git   
 npm install  
 react-native run-ios
 react-native run-android
 ```
+Set your Firebase URL in ```FirebaseConnect.js```.  
 
 This is a sample application that works both on Android and IOS with the 
 same codebase.  
